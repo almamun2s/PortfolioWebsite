@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Itim', cursive;
+}
+
+:root {
+    --logo_up: #00aeef;
+    --logo_down: #ee2d33;
+    --contact_color: #e47175;
+    --contact_border: #7abad1;
+    --transition: all 0.3s ease;
+
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+    --ff-itim: 'Itim', cursive;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--contact_border);
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--logo_down);
+    border: 1px solid var(--contact_border);
+    border-radius: 0.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hide {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.ff-ubuntu {
+    font-family: var(--ff-ubuntu);
+}
+
+
+
+
+
+
+
+
+
+/* ============== Header CSS ============== */
+header {
+    background-image: linear-gradient(to right, #ffe6d9, #fbf3ff);
+}
+
+.logo img {
+    max-width: 10rem;
+    padding: 5px 0;
+}
+
+.main_menu {
+    font-size: 1.1rem;
+    max-width: 10rem;
+    float: right;
+}
+
+.main_menu ul {
+    list-style: none;
+    display: flex;
+    padding-top: 0.5rem;
+}
+.main_menu ul li:hover a {
+    color: var(--logo_up);
+}
+
+.main_menu ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+}
+
+.menu_btn {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.menu_btn i {
+    position: inherit;
+}
+
+@media (min-width:768px) {
+    .menu_btn {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .main_menu ul {
+        flex-direction: column;
+        display: none;
+    }
+}
+.active {
+    background-color: #ef343a85;
+}
