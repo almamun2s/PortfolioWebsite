@@ -77,6 +77,7 @@ header {
     display: flex;
     padding-top: 0.5rem;
 }
+
 .main_menu ul li:hover a {
     color: var(--logo_up);
 }
@@ -113,6 +114,105 @@ header {
         display: none;
     }
 }
+
 .active {
     background-color: #ef343a85;
+}
+
+
+
+
+
+
+
+
+/* ============== Banner CSS ============== */
+.banner {
+    background-image: url(../img/herobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 5.75rem 0;
+}
+
+.banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width:768px) {
+    .banner {
+        padding: 3.75rem 0;
+        text-align: center;
+    }
+
+    .my-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .my-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* ============== Welcome CSS ============== */
+.welcome {
+    padding: 3.1rem 0;
+}
+
+.wlc_item {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3.75rem 0 rgba(169, 232, 255, 0.5);
+    overflow: hidden;
+}
+
+.wlc_icon {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(249 75 82 / 70%);
+    padding: 0.5rem 0;
+    margin: 5px;
+    border: 1px solid #fef2ff;
+    background-image: linear-gradient(to right, #fef2ff, #efd9ff);
+    border-radius: 50%;
+}
+
+@media (max-width:1199px) {
+    .wlc_icon {
+        width: 140%;
+    }
+}
+@media (max-width:991px) {
+    .wlc_icon {
+        width: 200%;
+    }
+}
+@media (max-width:767px) {
+    .wlc_icon {
+        width: 100%;
+    }
+}
+@media (max-width:575px) {
+    .wlc_item{
+        text-align: center;
+    }
+    .wlc_icon {
+        width: 15%;
+        position: absolute;
+        left: calc(50% - 3rem) ;
+    }
 }
