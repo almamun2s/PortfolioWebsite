@@ -13,3 +13,12 @@ $("#hide_menu").click ( function(){
     $("#show_menu").removeClass("hide");
     $(".main_menu ul").slideUp(500);
 });
+
+// Contact Form 
+$("#contact_btn").click( function(){
+    $("#popup_contact").addClass("popup_contact_show");
+});;
+$("#xmark").click( function(){
+    $("#popup_contact").removeClass("popup_contact_show");
+});
+
