@@ -127,7 +127,7 @@ header {
 /* .active {
     background-color: #ef343a85;
 } */
-.btn-primary{
+.btn-primary {
     background-color: var(--logo_up);
     border-color: var(--logo_up);
 }
@@ -216,12 +216,14 @@ header {
 @media (max-width:991px) {
     .wlc_icon {
         width: 220%;
+        margin-left: -0.5rem;
     }
 }
 
 @media (max-width:767px) {
     .wlc_icon {
         width: 115%;
+        margin-left: 0;
     }
 }
 
@@ -231,9 +233,9 @@ header {
     }
 
     .wlc_icon {
-        width: 13%;
+        width: 15%;
         position: absolute;
-        left: calc(50% - 3rem);
+        left: calc(50% - 2.5rem);
     }
 
     .wlc_item_inn {
@@ -291,6 +293,7 @@ header {
 }
 
 .service_item_right h3 {
+    font-size: 1.5rem;
     margin-bottom: 0;
     transition: var(--transition);
 }
@@ -443,4 +446,24 @@ header {
     transition: var(--transition);
     cursor: pointer;
     outline: none;
+}
+
+
+/* ============== Animation Duration CSS ============== */
+.animation_dur-5{
+    animation-duration: 500ms !important;
+}
+.animation_dur1{
+    animation-duration: 1000ms !important;
+}
+.animation_dur1-5{
+    animation-duration: 1500ms !important;
+}
+.animation_dur2{
+    animation-duration: 2000ms !important;
+}
+
+.progress-bar {
+    width: 0;
+    transition: width 2s;
 }
